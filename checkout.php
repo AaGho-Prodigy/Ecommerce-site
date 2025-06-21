@@ -1,8 +1,8 @@
-<?php
+<?php // Stripe Config
 session_start();
 $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username']) : '';
 ?>
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -92,7 +92,7 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
 </head>
 <body>
 
-<div class="checkout-container">
+<div class="checkout-container"> 
     <h1>Checkout</h1>
     
     <form id="checkout-form">
@@ -130,7 +130,7 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        const stripe = Stripe('pk_test_51RbksnPap1ekO0WTao6EkqLJgvvunZ6D2Wlf1kE6RKO7GpiaLuUtfp5V19fFNqxdp8ETDU3NyFKL47fJXelCZaRk00czhpNHoQ'); // Replace with your key
+        const stripe = Stripe('Public Key');// Public Key rakha
         
         const elements = stripe.elements();
         const cardElement = elements.create('card');

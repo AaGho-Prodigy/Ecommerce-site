@@ -1,4 +1,4 @@
-<?php
+<?php // Stripe Config
 session_start();
 $payment_id = $_GET['payment_id'] ?? '';
 ?>
@@ -12,9 +12,10 @@ $payment_id = $_GET['payment_id'] ?? '';
     </style>
 </head>
 <body>
-    <div class="success-message">Payment Successful! 🎉</div>
+    <div class="success-message">Payment Successful!s</div>
     <p>Thank you for your purchase.</p>
     <p>Payment ID: <?php echo htmlspecialchars($payment_id); ?></p>
     <a href="index.php">Return to Home</a>
 </body>
-</html>
+</html> 
+

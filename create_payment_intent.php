@@ -1,4 +1,4 @@
-<?php
+<?php //String Config
 require_once 'vendor/autoload.php'; 
 
 header("Access-Control-Allow-Origin: *");
@@ -6,7 +6,7 @@ header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Allow-Headers: Content-Type");
 header('Content-Type: application/json');
 
-\Stripe\Stripe::setApiKey('sk_test_51RbksnPap1ekO0WTi3X3KDzDqcEbjVh795g6mcck8b2fijAmDx1UTgPT7Yt5rmEtAGyWO7HSZzW7x1hawaLVnuu800od0OS4L9'); // Replace with your key
+\Stripe\Stripe::setApiKey('Secret Key'); // Secret Key
 
 try {
     $json = file_get_contents('php://input');
