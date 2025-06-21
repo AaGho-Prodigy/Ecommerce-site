@@ -1,0 +1,136 @@
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.info-box .icon {
+    width: 50px;
+    height: 50px;
+    background: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.info-box .icon i {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.details h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.details p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.social-media {
+    margin-top: 40px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background: #007bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    background: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Image Section Styling */
+.image-container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.service-image {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-image:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .image-container {
+        margin-top: 30px;
+    }
+    
+    
+}
+
+
+
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+    
+    .info-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .info-box .icon {
+        margin: 0 0 15px 0;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
